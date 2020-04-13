@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Tale of Crypton - ISTE KNIT Sultanpur</title>
+    </head>
+
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">Tale of Crypton</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a class="waves-effect waves-light btn pulse" href="game.html">Login with Facebook</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="carousel carousel-slider" style="position: fixed;">
+            <div class="carousel-fixed-item center">
+                <p class="flow-text white-text" style="text-shadow: 2px 2px 3px black;">ISTE KNIT Sultanpur Presents</p>
+                <h1 class="white-text" style="text-shadow: 4px 4px 3px black;">Tale of Crypton</h1>
+                <a class="waves-effect waves-light btn pulse" href="#">Login with Facebook</a>
+                <div style="margin-bottom: 50px;"></div>
+            </div>
+            <a class="carousel-item" href="#one!"><img src="images/food-1.jfif"></a>
+            <a class="carousel-item" href="#two!"><img src="images/food-2.jfif"></a>
+            <a class="carousel-item" href="#three!"><img src="images/food-3.jfif"></a>
+            <a class="carousel-item" href="#four!"><img src="images/food-4.jfif"></a>
+            <a class="carousel-item" href="#five!"><img src="images/food-5.jfif"></a>
+        </div>
+
+
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.carousel.carousel-slider').carousel({fullWidth: true,indicators: true,duration: 500});
+            });
+            autoplay()   
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4000);
+            }
+        </script>
+
+        
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '2577416549193488',
+        cookie     : true,
+        xfbml      : true,
+        version    : '{api-version}'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+    </body>
+</html>
